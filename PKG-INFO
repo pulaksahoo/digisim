@@ -3,8 +3,8 @@ Name: digg6
 Version: 0.1
 Summary: Digital simulation library!
 Home-page: https://github.com/khanstark
-Author: Kaif Khan
-Author-email: kaifkhan.khan0@gmail.com
+Author: Kaif Khan Pulak Sahoo Gaurav Singh Tushar
+Author-email: kaifkhan.khan0@gmail.com pulaksahoo94@gmail.com
 License: MIT
 Description: UNKNOWN
 Keywords: digital
@@ -13,5 +13,4 @@ Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers
 Classifier: Topic :: Software Development :: Build Tools
 Classifier: License :: OSI Approved :: MIT License
-Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 2
