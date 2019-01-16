@@ -1,3 +1,4 @@
-from digg6.gate import *
-from digg6.minimize import *
-from digg6.sequential import *
+from digisim.gate import *
+from digisim.minimize import *
+from digisim.sequential import *
+from digisim.generate import *

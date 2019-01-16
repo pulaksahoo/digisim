@@ -321,7 +321,7 @@ def back(exp,firstchar):
 		exp = ''.join([str(g) for g in exp])
 	return exp
 #main function
-def digi_minimise(n,expression):
+def digi_minimize(n,expression):
     #get the num of variables (bits) as input
     n_var = n
     # n_var = int(raw_input("Enter the number of variables(bits): "))
@@ -527,5 +527,5 @@ def digi_minimise(n,expression):
     # print(nand(s2))
 
 if __name__ == "__main__":
-    digi_minimise()
+    digi_minimize()
     # A = raw_input("\nPress Enter to Quit")

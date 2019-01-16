@@ -7,12 +7,6 @@ import minimize
 
 def gates(inp):
 	l=[]
-	
-	# dictt=OrderedDict()
-	# delimit=['+','.','^']
-	# for i in delimit:
-	# 	if(i not in inp):
-	# 		delimit.remove(i)
 	l=inp.split('+')
 	print(l)
 
@@ -37,7 +31,7 @@ def gates(inp):
 	# print(d)  print dictionary with index->no.of ands needed!
 	val=temp[-1:][0]
 	s=''
-	print(d)
+	
 	for i in temp:
 		# if(i!=val):
 		s+='('+i+')'+' OR '
@@ -46,7 +40,7 @@ def gates(inp):
 
 	print('OR--'+str(orr)+' AND--'+str(nd))
 	print(s)
-
+	
 	data,data1,data2,data3=[],[],[],[]		
 	for j in l:
 		if(len(j)==1):

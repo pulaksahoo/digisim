@@ -278,13 +278,13 @@ def FlipFlop(no_of_flipflops,no_of_cycles):
         name_of_flipflop_comp='F'+str(i+1)
         flipflop_names.append(name_of_flipflop)
         flipflop_names_complemented.append(name_of_flipflop_comp)
-    print("The flipflop names are: ",flipflop_names,"and its complements are: ",flipflop_names_complemented)
+    print "The flipflop names are: ",flipflop_names,"and its complements are: ",flipflop_names_complemented
     input_value=['0','1']
     type_value=['1','2','3']
     all_operator_operands=flipflop_names + flipflop_names_complemented + ['+','.']
 #     print(all_operator_operands)
     for i in range(no_of_flipflops):
-        print('FlipFlop No',i+1,': ')
+        print 'FlipFlop No',i+1,': '
         type_of_flipflop=raw_input('Enter the choice for type of flipflop as \n1.T-FlipFlop\n2.D-FlipFlop\n3.J-K FlipFlop\nEnter it here:  ')
         # print(type_of_flipflop)
         if(type_of_flipflop not in type_value):
@@ -411,14 +411,14 @@ def FlipFlop_async(no_of_flipflops,no_of_cycles):
         name_of_flipflop_comp='F'+str(i+1)
         flipflop_names.append(name_of_flipflop)
         flipflop_names_complemented.append(name_of_flipflop_comp)
-    print("The flipflop names are: ",flipflop_names,"and its complements are: ",flipflop_names_complemented)
+    print "The flipflop names are: ",flipflop_names,"and its complements are: ",flipflop_names_complemented
     input_value=['0','1']
     type_value=['1','2','3']
     all_operator_operands=flipflop_names + flipflop_names_complemented + ['+','.']
     print(all_operator_operands)
     for i in range(no_of_flipflops):
-        print('FlipFlop No',i+1,': ')
-        type_of_flipflop=input('Enter the choice for type of flipflop as \n1.T-FlipFlop\n2.D-FlipFlop\n3.J-K FlipFlop\nEnter it here:  ')
+        print 'FlipFlop No',i+1,': '
+        type_of_flipflop=raw_input('Enter the choice for type of flipflop as \n1.T-FlipFlop\n2.D-FlipFlop\n3.J-K FlipFlop\nEnter it here:  ')
         if(type_of_flipflop not in type_value):
             print('wrong value entered')
             exit()
@@ -426,18 +426,18 @@ def FlipFlop_async(no_of_flipflops,no_of_cycles):
             type_of_flipflop=int(type_of_flipflop)
     
         name_of_flipflop='f'+str(i+1)
-        initial_value=input('Enter initial value in 0 or 1: ')
+        initial_value=raw_input('Enter initial value in 0 or 1: ')
         while(initial_value not in ['0','1']):
-            initial_value=input('Enter intial value in 0 or 1: ')
+            initial_value=raw_input('Enter intial value in 0 or 1: ')
         initial_value=int(initial_value)
-        clock_equation=input('Enter clock equation')
+        clock_equation=raw_input('Enter clock equation: ')
         if(type_of_flipflop==3):
-            input_equation_j=input('Enter the equation for J: ')
+            input_equation_j=raw_input('Enter the equation for J: ')
 #             for j in input_equation_j:
 #                 if(j not in all_operator_operands):
 #                     print("Enter valid equation")
 #                     exit()
-            input_equation_k=input('Enter the equation for K: ')
+            input_equation_k=raw_input('Enter the equation for K: ')
 #             for j in input_equation_k:
 #                 if(j not in all_operator_operands):
 #                     print("Enter valid equation")
@@ -445,7 +445,7 @@ def FlipFlop_async(no_of_flipflops,no_of_cycles):
             x={'type':type_of_flipflop,'clock':clock_equation,'input_j':input_equation_j,'input_k':input_equation_k,'initial':initial_value,'previous':initial_value}
             
         else:
-            input_equation=input('Enter the equation: ')
+            input_equation=raw_input('Enter the equation: ')
 #             print(input_equation.split(''))
 #             for j in input_equation:
 #                 if(j not in all_operator_operands):
@@ -456,7 +456,7 @@ def FlipFlop_async(no_of_flipflops,no_of_cycles):
 #     print(flipflops)
     cyclecount_function_async(flipflops,no_of_cycles)
 # FlipFlop(3, 3)
-# FlipFlop_async(3,4)
+
         
             
         
